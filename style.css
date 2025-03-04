@@ -1,0 +1,480 @@
+/* ======================
+   Basic Settings
+   ====================== */
+*{
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Body Styling */
+body{
+    display: flex;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url(images/background.jpg);
+}
+
+/* ======================
+   Header Section
+   ====================== */
+header{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Navigation Links Styling */
+header a{
+    position: relative;
+    background: none;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin:20px
+}
+
+header a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px; /* Adjust for visibility */
+    width: 0;
+    height: 3px; /* Thickness of effect */
+    background-color: white; /* Change to a contrasting color */
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+/* Expands underline on hover */
+header a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Header Title */
+header h1{
+    color: white;
+    margin-top: 1%;
+    padding-bottom: 2.2%;
+    font-size: 35px ;
+}
+
+/* Header Title */
+.menu ul{
+    background-color: white;
+    background-image: linear-gradient(45deg,#e221f9,#2479f1);
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+    list-style-type: none;
+    border-radius: 30px;
+}
+.menu li{
+    background: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+
+}
+/* end of section */
+
+/* ======================
+   Main Page Section
+   ====================== */
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding:15px 20px;
+    color: #fff;
+    background-image: linear-gradient(45deg,#e221f9,#2479f1);
+    font-size: 20px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s ;
+}
+
+/* Button Hover Effect */
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+.btn2{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: fff;
+    background-image: linear-gradient(45deg,#e221f9,#2479f1);
+    font-size: 15px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 48vh;
+    background: none;
+}
+
+
+/* Content Section */
+.content{
+    color: white;
+    margin-right: 795px;
+    margin-top: 8%;
+    max-width: 600px;
+}
+
+.content h2{
+    font-size: 30px;
+}
+
+.content p{
+    font-size: 20px;
+    margin: 10px 0 30px;
+}
+
+.content .btn{
+    padding: 15px 80px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+.features-img{
+    width: 100%;
+    max-width: 650px;
+    position: absolute;
+    margin-top: 2%;
+    margin-right: 0%;
+    margin-left: 800px;
+}
+
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+input, textarea, select {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.index footer{
+    margin-top: 18%;
+}
+
+/* end of section */
+
+/* ======================
+   Apply Page Section
+   ====================== */
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: #202020;
+    padding: 25px 30px;
+    border-radius: 30px; 
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container form .user-details {
+    color: white;
+    margin-left: 5%;
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box {
+    margin-bottom: 12px;
+    width: calc(100% / 2 - 10px);
+  }
+
+form .input-box span.details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+.user-details .input-box input {
+    height: 40px;
+    width: 80%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 0.5px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+
+ 
+.user-details .input-box input[type="radio"] {
+    width: 16px;
+    height: 16px;
+}
+
+.gender-options{
+    display: flex;
+    gap: 20px;
+}
+
+.gender-options label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.user-details .input-box input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+.user-details .input-box select{
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: 0.5px solid #ccc;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.checkbox-container{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.skill-label{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+
+}
+
+.user-details .input-box fieldset {
+    width: 76.5%; /* Match input width */
+    height: 40px; /* Match input height */
+    border-radius: 5px; /* Same rounded corners as input */
+    border: 0.5px solid #ccc;
+    padding: 10px 10px; /* Adjust padding for content */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    gap: 40px; /* Space between radio buttons */
+}
+
+.user-details .input-box fieldset legend {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form .btn2{
+    height:60px ;
+    margin-top: 3%;
+    margin-right: 8%;
+}
+
+form .btn2 input{
+    background: none;
+    text-align: center;
+    align-items: center;
+    border: none;
+    color: white;
+    height: 60px;
+    width: 70px;
+    font-weight: 500;
+    font-size: 20px;   
+}
+
+.apply footer{
+    margin-top: 10%;
+}
+
+/* end of section */
+
+/* ======================
+   Jobs Description Section
+   ====================== */
+.jobs-content{
+    display: flex;
+    color: white;
+}
+
+.jobs-content ul{
+    background: none;
+    list-style-type: none;
+}
+
+.jobs-content li{
+    font-weight: 500;
+}
+
+.member-list ul{
+    background: none;
+}
+/* end of section */
+
+/* about page */
+.about{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 80%;
+    color: white;
+    max-width: 1200px;
+    font-size: 18px;
+    
+}
+
+.about ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.first_line{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+.name{
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 25px;
+    width: 75%;
+    background: #070707 ;
+}
+
+.mail{
+    flex: 1;
+    border: 2px solid white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 25px;
+    width: 25%;
+    background: #070707;
+}
+
+table{
+    margin: 20px auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: #070707;
+}
+
+th, td, tr{
+    font-weight: 500;
+    padding: 10px;
+}
+
+.group-photo img{
+    width: 550px;
+    border-radius: 25px;
+}
+
+.second_line{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.about_footer{
+    margin-top: 50%;
+}
+
+/* end of section */
+
+/* job section*/
+.job-image{
+    width: 550px;
+    overflow: hidden;
+}
+
+.job-overview{
+    display: flex;
+    justify-content: space-between;
+    will-change: transform, opacity;
+    margin-top: 40px;
+    gap: 60px;
+}
+
+.job-section{
+    font-size: 17px;
+    color: white;
+    max-width: 600px;
+}
+
+.return{
+    text-decoration: none;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 80%;
+    background-image: linear-gradient(45deg,#e221f9,#2479f1);
+    border-radius: 50%;
+    color: white;
+}
+
+.job footer{
+    position: relative;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* end of section*/
+
+.enhance{
+    max-width: 700px;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px;
+    margin-top: 1%;
+}
+
+.ench footer{
+    margin-top: 70%;
+}
+
+
+footer{
+    position: relative;
+    margin-top: 10%;
+    text-align: center;
+    padding: 3px;
+    color: white;
+}
+
