@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Apply</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="jobs.html">Job</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                    <li><a href="enhancements.html">Enhancement</a></li>
+                </ul>
+            </div>
+                <h1 class="anim">Application Form</h1>
+            </nav>
+        </header>
+        <div class="apply">
+        <div class="container anim">
+            <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="POST">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Job reference number</span>
+                        <input type="text" name="reference_number" pattern="[A-Za-z0-9]{5}" title="Must be exactly 5 alphanumeric characters" required >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">First name</span>
+                        <input type="text" name="f_name" pattern="[A-Za-z]{1,20}" title="Maximux 20 letters" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last name</span>
+                        <input type="text" name="l_name" pattern="[A-Za-z]{1,20}" title="Maximux 20 letters" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of birth</span>
+                        <input type="date" name="dob" required>
+                    </div>
+                    <div class="input-box">
+                        <fieldset class="gender-fieldset">
+                        <legend>Gender</legend>
+                        <div class="gender-options">
+                        <label >Male<input type="radio" name="gender" value="male" required="required" checked></label>
+                        <label >Female<input type="radio" name="gender" value="female" required="required"></label>
+                        </div>
+                        </fieldset>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Street Address</span>
+                        <input type="text" maxlength="40">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Suburb/town</span>
+                        <input type="text" maxlength="40">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">State</span>
+                        <select name="state" id="state" required>
+                        <option value="Please select" disabled selected>Please select</option>
+                        <option value="VIC">VIC</option>
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="NT">NT</option>
+                        <option value="WA">WA</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="ACT">ACT</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Postcode</span>
+                        <input type="text" pattern="\d{4}" minlength="4" maxlength="4" title="Must be exactly 4 digits" required >
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email address</span>
+                        <input type="email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone number </span>
+                        <input type="tel" pattern="[0-9 ]{8,12}" minlength="8" maxlength="12" title="Must be 8-12 digits or spaces" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Skill list</span>
+                    <div class="checkbox-container">
+                        <label class="skill-label">Technical Skill<input type="checkbox" name="skillset" value="Technical Skill" checked="checked"></label>
+                        <label class="skill-label">Soft Skill<input type="checkbox" name="skillset" value="Soft Skill"></label>
+                    </div>
+                    <div class="checkbox-container">
+                        <label class="skill-label">Others<input type="checkbox" name="skillset" value="Others"></label>
+                    </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Other skills</span>
+                        <textarea name="other-skills" rows="5" cols="20"></textarea>
+                    </div>
+                    <div class="btn2">
+                        <input type="submit" value="Apply">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="footer">&#169; 2025 SFC, All rights reserved.</div>
+            <div class="contact">Contact Us: example@gmail.com</div>
+        </footer>
+    </div>
+    </body>
+</html>
