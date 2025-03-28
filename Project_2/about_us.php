@@ -59,15 +59,6 @@
                 <li><strong>Hoang Don Xuan Vinh</strong> - 105545302 - 100% - making the website format, homepage, adding CSS features.</li>
             </ul>
         </div>
-        <div class="contact-info">
-            <h2>Contact Us:</h2>
-            <ul>
-                <li><strong>Vo Cong Minh</strong> - <a href="mailto:vocong.minh2103@gmail.com">vocong.minh2103@gmail.com</a></li>
-                <li><strong>Le Ngoc Trieu Duong</strong> - <a href="mailto:duongle271006@gmail.com">duongle271006@gmail.com</a></li>
-                <li><strong>Truong Minh Tinh</strong> - <a href="mailto:tinhtruong2605@gmail.com">tinhtruong2605@gmail.com</a></li>
-                <li><strong>Hoang Don Xuan Vinh</strong> - <a href="mailto:vinh.donhoang@gmail.com">vinh.donhoang@gmail.com</a></li>
-            </ul>
-        </div>
         <div class="timetable">
             <h2>Timetable</h2>
             <table>
@@ -98,32 +89,58 @@
                 </tbody>
             </table>
         </div>
+        <div class="grid2">
         <div class="leadership-section">
   <h2>Our Members</h2>
   <div class="leadership-container">
     <div class="leader">
-      <img src="styles/images/VoCongMinh.jpg" alt="Vo Cong Minh">
-      <h3>Vo Cong Minh</h3>
+      <img 
+    loading="lazy"
+    role="presentation"
+    src="styles/images/VoCongMinh.jpg" 
+    alt="Vo Cong Minh" 
+    title="Vo Cong Minh - President"
+    class="leader-image">
+      <h3><a href="mailto:vocong.minh2103@gmail.com">Vo Cong Minh</a></h3>
       <p>President</p>
     </div>
     <div class="leader">
-      <img src="styles/images/LeNgocTrieuDuong.jpg" alt="Le Ngoc Trieu Duong">
-      <h3>Le Ngoc Trieu Duong</h3>
+      <img 
+    loading="lazy"
+    role="presentation"
+    src="styles/images/LeNgocTrieuDuong.jpg" 
+    alt="Le Ngoc Trieu Duong"
+    title="Le Ngoc Trieu Duong - Player"
+    class="leader-image">
+      <h3><a href="mailto:duongle271006@gmail.com">Le Ngoc Trieu Duong</a></h3>
       <p>Player</p>
     </div>
     <div class="leader">
-      <img src="styles/images/HoangDonXuanVinh.jpg" alt="Hoang Don Xuan Vinh">
-      <h3>Hoang Don Xuan Vinh</h3>
+      <img 
+    loading="lazy"
+    role="presentation"
+    src="styles/images/HoangDonXuanVinh.jpg" 
+    alt="Hoang Don Xuan Vinh"
+    title="Hoang Don Xuan Vinh - Player"
+    class="leader-image">
+      <h3><a href="mailto:vinh.donhoang@gmail.com">Hoang Don Xuan Vinh</a></h3>
       <p>Player</p>
     </div>
     <div class="leader">
-      <img src="styles/images/TruongMinhTinh.jpg" alt="Truong Minh Tinh">
-      <h3>Truong Minh Tinh</h3>
+      <img 
+      loading="lazy"
+      role="presentation"
+      src="styles/images/TruongMinhTinh.jpg" 
+      alt="Truong Minh Tinh"
+      title="Truong Minh Tinh - Player"
+      class="leader-image">
+      <h3><a href="mailto:tinhtruong2605@gmail.com">Truong Minh Tinh</a></h3>
       <p>Player</p>
+        </div>
     </div>
     <!-- Thêm các phần tử .leader cho các thành viên khác nếu cần -->
   </div>
-            <div class="map">
+        <div class="map">
             <h2>Our Location</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4883.5267227319055!2d106.65590537588385!3d10.80606815864453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175293bd3699b07%3A0x940f9759f860b26a!2sChao%20Lua%20Football%20Field!5e1!3m2!1sen!2s!4v1740043319935!5m2!1sen!2s" 
             width="600" height="450" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
