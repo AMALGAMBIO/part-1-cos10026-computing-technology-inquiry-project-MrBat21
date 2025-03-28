@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    background: black;
+    align-items: center;
+}
+
+/* ======================
+   Header Section
+   ====================== */
+header{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.logo{
+    position: relative;
+    right: 8%;
+    width: 70px;
+    height: 70px;
+}
+
+/* Navigation Links Styling */
+nav{
+    width: 70vw;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu li {
+    list-style-type: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: #030303;
+    transition: 0.3s;
+}
+
+.menu li:hover{
+    background: #000000;
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* ======================
+   About Us Section
+   ====================== */
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.about h1{
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.about p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.about img{
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation: slideUp 1s ease;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    background: black;
+    align-items: center;
+}
+
+/* ======================
+   Header Section
+   ====================== */
+header{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+.logo{
+    position: relative;
+    right: 8%;
+    width: 70px;
+    height: 70px;
+}
+/* Navigation Links Styling */
+nav{
+    width: 70vw;
+}
+
+header a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu li {
+    list-style-type: none;
+    width: 150px;  /* Adjust width dynamically */
+    height: 40px; /* Allow content to define height */
+    overflow: hidden;
+    padding: 10px;
+}
+
+li>span{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+li:hover span{
+    transform: translateY(-100%);
+}
+
+li>span:nth-child(1){
+    font-size:20px;
+}
+
+hr{
+    width: 100%;
+    color: rgb(62, 62, 62);
+}
+/* Animation for section slide-up */
+section {
+    animation: slideUp 0.8s ease;
+}
+
+/* Enhanced table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid white;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+table tr:hover {
+    background-color: #444;
+    transition: background-color 0.3s ease;
+}
+.leadership-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .leadership-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .leader {
+    text-align: center;
+  }
+  
+  .leader img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .leader h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+  
+  .leader p {
+    font-size: 16px;
+    color: gray;
+  }
+
+
+  footer{
+    text-align: center;
+    width: 96.3vw;
+    margin-top: 15%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+    gap: 20px; /* Adds spacing between items */
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text{
+    position: relative;
+    left: 30%;
+    bottom: 5%;
+}
+
+.contact-pic svg{
+    fill: white;
+}
+
+.contact-pic{
+    display: flex;
+    position: relative;
+    bottom: 5%;
+    right: 2%;
+}
+
+.mail{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1px;
+    padding: 0% 6% 0% 6%;
+    font-weight: 500;
+}
+
+.mail svg{
+    padding-bottom: 1em;
+}
+
+.facebook{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    font-weight: 500;
+}
+
+.facebook svg{
+    padding-bottom: 1em;
+}
+
+.White-text{
+    color: white;
+    font-size: 25px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.Gold-text{
+    color: rgb(170, 145, 0);
+    font-size: 30px;
+    margin-top: 2%;
+}
+  
